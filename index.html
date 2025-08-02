@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought Jar - Your Personal Wisdom Keeper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🫙 Thought Jar</h1>
+            <p class="subtitle">Your personal wisdom keeper</p>
+        </header>
+
+        <main>
+            <div class="jar-container">
+                <div class="jar">
+                    <div class="jar-lid"></div>
+                    <div class="jar-body">
+                        <div class="thoughts-count" id="thoughtsCount">0 thoughts stored</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="add-section">
+                    <h3>Add a Thought</h3>
+                    <textarea 
+                        id="thoughtInput" 
+                        placeholder="What's on your mind? Write a thought, idea, or question..."
+                        maxlength="500"
+                    ></textarea>
+                    <button id="addBtn" class="btn primary">Add to Jar 🌟</button>
+                </div>
+
+                <div class="draw-section">
+                    <h3>Draw a Thought</h3>
+                    <button id="drawBtn" class="btn secondary">Get Random Thought 🎲</button>
+                    <div id="thoughtDisplay" class="thought-display"></div>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number" id="totalCount">0</span>
+                    <span class="stat-label">Total Thoughts</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="drawCount">0</span>
+                    <span class="stat-label">Times Drawn</span>
+                </div>
+            </div>
+
+            <div class="manage-section">
+                <button id="showAllBtn" class="btn tertiary">Manage All Thoughts</button>
+                <div id="allThoughtsContainer" class="all-thoughts hidden"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Keep your thoughts safe and rediscover them when you need inspiration! ✨</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
